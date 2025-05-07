@@ -3,26 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finn Isler's Photography || Home</title>
+    <title>Finn Isler Photography || Home</title>
     <link rel="stylesheet" href="styles/default.css">
 </head>
 <body>
-    <header>
-        
-        <h1>Finn Isler Photography</h1>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="fujifilm-recipes.html">Fujifilm Recipes</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <header>  
+        <div data-include="/components/header.html"></div>
     </header>
     <main>
-        
+
+        <div class="grid">
+            <!-- column 1 -->
+            <div class="column">
+                <div class="grid-item"><button type="img" id="image-button"><img src="images/Home Photos/bridget in low light.jpg" alt="" method="dialog"></button></div>
+                <div class="grid-item"><img src="images/Home Photos/bird on ledge.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/aero office building.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/cold chrome contrast-1.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/cold chrome contrast-2.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/cold chrome contrast-3.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/cold chrome contrast-4.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/b&w freddie.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/new-1.jpg" alt=""></div>
+            </div>
+            <!-- column 2 -->
+            <div class="column">
+                <div class="grid-item"><img src="images/Home Photos/blue and orange lamp 2.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/construction worker from above.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/finn getting ready-1.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/finn getting ready-2.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/tree on the shore of a lake.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/white apartments from car deck.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/b&w children at play.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/new-3.jpg" alt=""></div>
+            </div>
+            <!-- column 3 -->
+            <div class="column">
+                <div class="grid-item"><img src="images/Home Photos/bridget's dress.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/chrome contrast.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/cold buildings-1.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/house on dark water.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/light in the car deck.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/the dillon.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/winter park-1.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/winter park-2.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/bird feeder.jpg" alt=""></div>
+            </div>
+            <!-- column 4 -->
+            <div class="column">
+                <div class="grid-item"><img src="images/Home Photos/fence on 35mm.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/cold buildings-2.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/cold buildings-3.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/orange porch.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/old barn at horseshoe.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/old orange building.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/old wf uni.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/winter park-3.jpg" alt=""></div>
+                <div class="grid-item"><img src="images/Home Photos/winter park-4.jpg" alt=""></div>
+            </div>
+        </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div data-include="/components/footer.html"></div>
+    </footer>
+    
+    <div id="image-modal" class="modal hidden">
+        <span id="modal-close">&times;</span>
+        <img id="modal-img" src="" alt="Full size image">
+      </div>
+      
+    <!-- componenet loader -->
+    <script src="scripts/modal-gallery.js"></script>
+    <script src="scripts/MASONRY.js"></script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+
     
 </body>
 </html>
